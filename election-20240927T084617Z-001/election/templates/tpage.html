@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tpage.css') }}">
+</head>
+<body>
+    <form id="voteForm" action="{{ url_for('vote') }}" method="post">
+        <fieldset class="form">
+            <h2>Candidate Name:</h2>
+            <input type="text" class="name" name="candidate_name" required>
+            <br><br>
+            <h2>Ward Number:</h2>
+            <select name="ward_number" required>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <br><br>
+            <h2>Candidate Party:</h2>
+            <div class="radio">
+                <label><input type="radio" name="candidate_party" value="party1" required> Party 1</label><br>
+                <label><input type="radio" name="candidate_party" value="party2"> Party 2</label><br>
+                <label><input type="radio" name="candidate_party" value="party3"> Party 3</label><br><br>
+            </div>
+            <button type="submit" class="button">VOTE</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+div {
+  padding-top: 80px;
+  padding-left: 200px;
+  color: white;
+}
+
+body {
+  background-image: url("/static/images/fpagebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1475px 800px;
+  filter: brightness(1.2) contrast(1.2);
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: cyan;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+a {
+  padding-left: 20px;
+}
+
+.button {
+  background-color: #ae1905;
+  border: none;
+  color: deep pink;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  content-align: center;
+}
+
+.hii {
+  padding-left: 160px;
+}
+
+fieldset {
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.in {
+  background-color: black;
+  width: 90%;
+  border: 1px black;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+p {
+  color: gainsboro;
+}

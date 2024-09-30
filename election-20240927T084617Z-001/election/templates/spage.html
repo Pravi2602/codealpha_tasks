@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spage.css') }}">
+</head>
+<body>
+    <div class="con">
+        <img src="{{ url_for('static', filename='images/spagelogo.jpg') }}" alt="Logo">
+        <h1 class="hello">Indian Online Voting System!</h1>
+    </div>
+    <br><br><br>
+    <ul>
+        <div class="h">
+            <li><i class="fas fa-bars" style="font-size:24px;"></i></li>
+        </div>
+        <li><a href="#" class="my">About</a></li>
+        <li><a href="#" class="my">Info</a></li>
+        <li><a href="#" class="my">Profile</a></li>
+        <li><a href="#" class="my">Settings</a></li>
+    </ul>
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagevotereducation.jpg') }}" alt="Voter Education"></a>
+            <h4>Voter Education</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagecandidateprofile.jpg') }}" alt="Candidate Profile"></a>
+            <h4>Candidates Profile</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagecontactinfo.jpg') }}" alt="Contact Info"></a>
+            <h4>Contact Info</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spageelectionupdates.jpg') }}" alt="Election Updates"></a>
+            <h4>Election Updates</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spageFAQ.jpg') }}" alt="FAQ"></a>
+            <h4>FAQ</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagepoliticalparties.jpg') }}" alt="Political Parties"></a>
+            <h4>Political Parties</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagevotingnewsandupdates.jpg') }}" alt="Voting News and Updates"></a>
+            <h4>Voting News and Updates</h4>
+        </div>
+        <div>
+            <a href="#"><img src="{{ url_for('static', filename='images/spagevotingprocedure.jpg') }}" alt="Voting Procedure"></a>
+            <h4>Voting Procedure</h4>
+        </div>
+    </div>
+    <div class="im">
+        <div>
+            <a href="https://www.eci.gov.in/ict-app"><img src="{{ url_for('static', filename='images/spageeciweb.jpg') }}" alt="ECI Website"></a>
+        </div>
+        <div class="am">
+            <div>
+                <a href="https://www.eci.gov.in/cec-rajiv-kumar"><img src="{{ url_for('static', filename='images/spagerajivkumar.jpg') }}" alt="Rajiv Kumar"></a>
+                <h3>Shri Rajiv Kumar</h3>
+                <h4>Chief Election Commissioner</h4>
+            </div>
+            <br>
+            <div>
+                <a href="https://www.eci.gov.in/cec-rajiv-kumar"><img src="{{ url_for('static', filename='images/spagegyaneshkumar.jpg') }}" alt="Gyanesh Kumar"></a>
+                <h3>Shri Gyanesh Kumar</h3>
+                <h4>Election Commissioner</h4>
+            </div>
+            <br>
+            <div>
+                <a href="https://www.eci.gov.in/cec-rajiv-kumar"><img src="{{ url_for('static', filename='images/spagesukbhir.jpg') }}" alt="Sukhbir Singh Sandhu"></a>
+                <h3>Dr Sukhbir Singh Sandhu</h3>
+                <h4>Election Commissioner</h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <a href="{{ url_for('tpage') }}"><button class="button">CLICK TO VOTE!</button></a>
+</body>
+</html>

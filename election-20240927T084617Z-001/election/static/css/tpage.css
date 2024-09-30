@@ -1,0 +1,38 @@
+body {
+    background-image: url("/static/images/tpage_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+    filter: brightness(1.2) contrast(1.2);
+}
+
+fieldset {
+    border: 3px solid black;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.radio label {
+    display: block;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

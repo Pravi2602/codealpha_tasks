@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fpage.css') }}">
+    <style>
+        fieldset.in {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+  <form action="{{ url_for('login') }}" method="post" >
+    <fieldset style="background-color:black">
+      <h1 class="text-white">Welcome to Online Voting System!</h1>
+      <br>
+      <h3>Username :</h3>  
+      <input type="text" name="username" placeholder="Username" required minlength="8" pattern="[A-Za-z]+" title="Username must be at least 8 characters long and contain only letters without spaces">
+      <br>
+      <h3>Identification Number :</h3>  
+      <input type="text" name="id_number" placeholder="Eg. Aadhar number" required minlength="5" pattern="\d+" title="Identification Number must be at least 5 digits long and contain only numbers">
+      <br><br><br>
+      <u><a href="#">Need Help?</a></u>
+      <br><br><br>
+      <a href="{{ url_for('spage') }}" button type="submit" class="button">Login</button></a>
+    </fieldset>
+  </form>
+</div>
+<br><br>
+<fieldset class="in" style="width: 100%;"><br>
+  <a href="#">Questions?</a>  
+  <a href="#">Call 009 783946 263</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Terms and Conditions</a>
+  <br><br>
+  <a href="#">FAQ</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Help Centre</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Terms of Use</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Privacy</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Cookie Preferences</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#">Corporate Information</a>
+</fieldset>
+</body>
+</html>  
